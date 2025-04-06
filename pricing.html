@@ -1,64 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>NetBlade</title>
-      <link rel="stylesheet" href="styling.css">
-      <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NetBlade</title>
+    <link rel="stylesheet" href="styling.css" />
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-      <div class="nav-bar">
-        <div class= "nav-logo"><img src="./public/netBlade-logo.png" alt="NetBlade logo"></div>
-          <div class="nav-links-container">
-              <a class="nav-link active" href="index.html" id="topLink">Home</a>
-              <a class="nav-link active" href="about.html" id="aboutLink">About Us</a>
-              <a class="nav-link active" href="pricing.html" id="portfolioLink">Pricing</a>
-              <a class="nav-link active" href="contact.html" id="contactLink">Contact</a>
-          </div>
+    <div class="nav-bar">
+      <div class="nav-logo">
+        <img src="./public/netBlade-logo.png" alt="NetBlade logo" />
       </div>
-
-	 <div class="rela-block top-section grad-back" id="topSection">
-          <div class="abs-cent-text top-text">
-		<div class="pricing-section">
- 		 <h2>Pricing</h2>
-  			<div class="pricing-container">
-   			 <!-- Tier 1 -->
-			    <div class="pricing-card">
-			      <h3>Tier 1</h3>
-			      <p class="original-price">$25.00</p>
-			      <p class="discounted-price">$21.25 <span>/ user / mo</span></p>
-			      <button>Choose Tier 1</button>
-			    </div>
-
-			    <!-- Tier 2 -->
-			    <div class="pricing-card">
-			      <h3>Tier 2</h3>
-			      <p class="original-price">$20.00</p>
-			      <p class="discounted-price">$16.00 <span>/ user / mo</span></p>
-			      <button>Choose Tier 2</button>
-			    </div>
-			
-			    <!-- Tier 3 -->
-			    <div class="pricing-card">
-			      <h3>Tier 3</h3>
-			      <p class="original-price">$15.00</p>
-			      <p class="discounted-price">$11.25 <span>/ user / mo</span></p>
-			      <button>Choose Tier 3</button>
-			    </div>
- 			 </div>
-			</div>
-
-          </div>
+      <div class="nav-links-container">
+        <a class="nav-link active" href="index.html" id="topLink">Home</a>
+        <a class="nav-link active" href="about.html" id="aboutLink">About Us</a>
+        <a class="nav-link active" href="pricing.html" id="portfolioLink">Pricing</a>
+        <a class="nav-link active" href="contact.html" id="contactLink">Contact</a>
       </div>
-      <div class="rela-block footer-section">
-          <h2 class="small-header top-link">Check our Socials</h2>
-          <div class="rela-block social-buttons-container">
-            <div class="social-button linkedin-button"></div>
-            <div class="social-button github-button"></div>
+    </div>
+
+    <div class="rela-block top-section grad-back" id="topSection">
+      <div class="abs-cent-text top-text">
+        <div class="pricing-section">
+          <h2>Pricing</h2>
+          <div class="pricing-container">
+            <!-- Tier 1 -->
+            <div class="pricing-card">
+              <h3>Tier 1</h3>
+              <p class="price">
+                <span class="original-price" title="15% Off!">$25.00</span>
+                <span class="discounted-price">$21.25</span>
+                <span class="per-user">/ user / mo</span>
+              </p>
+              <button>Choose Tier 1</button>
+            </div>
+
+            <!-- Tier 2 -->
+            <div class="pricing-card featured">
+              <h3>Tier 2</h3>
+              <p class="price">
+                <span class="original-price" title="20% Off!">$20.00</span>
+                <span class="discounted-price">$16.00</span>
+                <span class="per-user">/ user / mo</span>
+              </p>
+              <button>Choose Tier 2</button>
+            </div>
+
+            <!-- Tier 3 -->
+            <div class="pricing-card">
+              <h3>Tier 3</h3>
+              <p class="price">
+                <span class="original-price" title="25% Off!">$15.00</span>
+                <span class="discounted-price">$11.25</span>
+                <span class="per-user">/ user / mo</span>
+              </p>
+              <button>Choose Tier 3</button>
+            </div>
           </div>
-          <p>placeholder</p>
+
+          <!-- Comparison toggle -->
+          <div class="comparison-toggle">
+            <button id="compare-btn">Show Plan Comparison</button>
+            <div id="comparison-table" class="hidden">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Feature</th>
+                    <th>Tier 1</th>
+                    <th>Tier 2</th>
+                    <th>Tier 3</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Basic Support</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                  </tr>
+                  <tr>
+                    <td>Advanced Security</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                  </tr>
+                  <tr>
+                    <td>Dedicated Manager</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="rela-block footer-section">
+      <h2 class="small-header top-link">Check our Socials</h2>
+      <div class="rela-block social-buttons-container">
+        <div class="social-button linkedin-button"></div>
+        <div class="social-button github-button"></div>
+      </div>
+      <p>placeholder</p>
+    </div>
+
+    <script>
+      document.getElementById("compare-btn").addEventListener("click", function () {
+        const table = document.getElementById("comparison-table");
+        table.classList.toggle("hidden");
+        this.textContent = table.classList.contains("hidden")
+          ? "Show Plan Comparison"
+          : "Hide Plan Comparison";
+      });
+    </script>
   </body>
 </html>
+

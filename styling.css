@@ -749,78 +749,135 @@ body {
 
 
 /* Pricing */
-/* Section container */
 .pricing-section {
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
-/* Heading */
-.pricing-section h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-/* Pricing cards container */
 .pricing-container {
   display: flex;
-  gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
-/* Individual card */
 .pricing-card {
-  background-color: #1f2937;
-  border: 1px solid #374151;
-  padding: 1.5rem;
+  background: white;
   border-radius: 1rem;
-  width: 250px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Tier title */
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
 .pricing-card h3 {
-  font-size: 1.25rem;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
 }
 
-/* Original price (crossed out) */
+.pricing-card .price {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
 .original-price {
   text-decoration: line-through;
-  color: #9ca3af;
-  margin-bottom: 0.25rem;
-  font-size: 0.9rem;
+  color: #999;
+  margin-right: 0.5rem;
 }
 
-/* Discounted price */
 .discounted-price {
-  color: #4ade80; /* green-400 */
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  color: #28a745;
+  font-weight: bold;
 }
 
-.discounted-price span {
+.per-user {
   font-size: 0.9rem;
-  color: #d1d5db;
+  color: #666;
 }
 
-/* Button styling */
 .pricing-card button {
-  background-color: #4f46e5;
-  color: #fff;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
   border: none;
-  padding: 0.75rem 1rem;
   border-radius: 0.5rem;
+  background-color: #007bff;
+  color: white;
   cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease;
 }
 
 .pricing-card button:hover {
-  background-color: #4338ca;
+  background-color: #0056b3;
 }
+
+/* Featured Tier (optional style for Tier 2) */
+.featured {
+  border: 2px solid #007bff;
+}
+
+/* Comparison Table Toggle */
+.comparison-toggle {
+  margin-top: 3rem;
+}
+
+.comparison-toggle button {
+  background-color: #6c757d;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.comparison-toggle button:hover {
+  background-color: #5a6268;
+}
+
+/* Comparison Table Styles */
+#comparison-table {
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+#comparison-table table {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+#comparison-table th,
+#comparison-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+#comparison-table th {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+#comparison-table tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+/* Hidden class for JS toggle */
+.hidden {
+  display: none;
+}
+
 /* Pricing End */
 
 @media screen and (max-width: 1300px) {
