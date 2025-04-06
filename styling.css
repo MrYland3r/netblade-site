@@ -790,12 +790,13 @@ body {
 .original-price {
   text-decoration: line-through;
   color: #999;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 .discounted-price {
   color: #28a745;
   font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .per-user {
@@ -878,6 +879,14 @@ body {
   display: none;
 }
 
+.price-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
 /* Pricing End */
 
 @media screen and (max-width: 1300px) {
