@@ -464,7 +464,7 @@ body {
   transform: translateY(-50%);
   height: 50px;
   width: 50px;
-  background: url(""*") no-repeat center;
+  background: url("*") no-repeat center;
   background-size: cover;
   cursor: pointer;
 }
